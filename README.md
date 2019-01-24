@@ -1,13 +1,17 @@
 # 快代理SDK - CSharp
 
-### csharp_api.cs
+### 调用API
+#### csharp_api.cs
 使用原生库调用api示例, http/https网页均适用
 
-### csharp_http.cs
+### HTTP代理
+#### csharp_http.cs
 使用原生库请求Http代理服务器, http/https网页均适用
 
-### csharp_socks_httptosocks.cs
+### Socks代理
+#### csharp_socks_httptosocks.cs
 适用`HttpToSocks5Proxy`库请求Socks代理服务器, http/https网页均适用
+
 使用提示:
 * 请先安装或引用[HttpToSocks5Proxy](https://github.com/MihaZupan/HttpToSocks5Proxy)
 
