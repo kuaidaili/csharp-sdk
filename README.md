@@ -1,5 +1,3 @@
-[API部分](#api部分)
-
 # 快代理SDK - CSharp
 
 ## API部分:
