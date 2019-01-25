@@ -14,9 +14,9 @@
 
 ### csharp_socks_httptosocks.cs
 使用`HttpToSocks5Proxy`库请求Socks代理服务器, http/https网页均适用
-```
-使用提示: 请先安装或引用HttpToSocks5Proxy: https://github.com/MihaZupan/HttpToSocks5Proxy
-```
+
+**使用提示**: [HttpToSocks5Proxy](https://github.com/MihaZupan/HttpToSocks5Proxy)是第三方库，请先安装后再运行。
+
 
 ## 技术支持
 
