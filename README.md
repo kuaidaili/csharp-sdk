@@ -17,6 +17,10 @@
 
 **使用提示**: [HttpToSocks5Proxy](https://github.com/MihaZupan/HttpToSocks5Proxy)是第三方库，请先安装后再运行。
 
+## 隧道代理部分
+使用原生库请求Http代理服务器, http/https网页均适用
+
+
 
 ## 技术支持
 
