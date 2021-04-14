@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Net.Http;
 using System.IO;
 using System.IO.Compression;
@@ -15,18 +15,18 @@ namespace httptosocks
 
             // 代理服务器
             string proxy_ip = "59.38.241.25";
-            int proxy_port = 23916;
+            int proxy_port = 23918;
 
-            // 用户名密码 <私密代理/独享代理>
-            string username = "myusername";
-            string password = "mypassword";
+            // 用户名密码认证(私密代理/独享代理)
+            string username = "username";
+            string password = "password";
 
-            // 设置代理 <开放代理或私密/独享代理&已添加白名单>
+            // 设置代理 (开放代理或私密/独享代理&已添加白名单)
             // var proxy = new HttpToSocks5Proxy(new[] {
             //     new ProxyInfo(proxy_ip, proxy_port),
             // });
 
-            // 设置Socks5代理 <私密/独享代理&未添加白名单>
+            // 设置Socks5代理 (私密/独享代理&未添加白名单)
             var proxy = new HttpToSocks5Proxy(new[] {
                 new ProxyInfo(proxy_ip, proxy_port, username, password),
             });
