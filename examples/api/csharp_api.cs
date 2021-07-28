@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Text;
 using System.Net;
 using System.IO;
@@ -10,15 +10,15 @@ namespace csharp_api
     {
         static void Main(string[] args)
         {
-            // 要访问的目标网页
-            string page_url = "http://dev.kdlapi.com/testproxy";
-            
+            // api链接
+            string api_url = "http://dev.kdlapi.com/api/getproxy/?orderid=96518362xxxxxx&num=100&protocol=1&method=2&an_ha=1&sep=1";
+
             // 请求目标网页
-            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(page_url);
+            HttpWebRequest request = (HttpWebRequest)WebRequest.Create(api_url);
             request.Method = "GET";
             request.Headers.Add("Accept-Encoding", "Gzip");  // 使用gzip压缩传输数据让访问更快
             HttpWebResponse response = (HttpWebResponse)request.GetResponse();
-            
+
             Console.WriteLine((int)response.StatusCode);  // 获取状态码
             // 解压缩读取返回内容
             using (StreamReader reader =  new StreamReader(new GZipStream(response.GetResponseStream(), CompressionMode.Decompress))) {
