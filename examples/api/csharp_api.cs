@@ -13,7 +13,7 @@ namespace csharp_api
             // api链接
             string api_url = "http://dev.kdlapi.com/api/getproxy/?orderid=96518362xxxxxx&num=100&protocol=1&method=2&an_ha=1&sep=1";
 
-            // 请求目标网页
+            // 请求api链接获取代理ip
             HttpWebRequest request = (HttpWebRequest)WebRequest.Create(api_url);
             request.Method = "GET";
             request.Headers.Add("Accept-Encoding", "Gzip");  // 使用gzip压缩传输数据让访问更快
